@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     'corsheaders',
 
     'apps.users',
+    'apps.authentication'
     #'apps.chat',
     #'apps.cras',
     #'apps.services',
