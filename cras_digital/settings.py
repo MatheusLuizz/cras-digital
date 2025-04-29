@@ -78,7 +78,6 @@ DATABASES = {
         'PASSWORD': env('POSTGRES_PASSWORD'),
         'HOST': env('POSTGRES_HOST'),
         'PORT': env('POSTGRES_PORT'),
-        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
@@ -140,4 +139,4 @@ SIMPLE_JWT = {
 
 CORS_ALLOWED_ALL_ORIGINS = True
 
-AUTH_USER_MODEL = 'apps.users.User'
+AUTH_USER_MODEL = 'users.User'
