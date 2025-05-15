@@ -30,10 +30,10 @@ INSTALLED_APPS = [
 
     'apps.users',
     'apps.authentication'
-    #'apps.chat',
-    #'apps.cras',
-    #'apps.services',
-    #'apps.process',
+    # 'apps.chat',
+    # 'apps.cras',
+    # 'apps.services',
+    # 'apps.process',
 ]
 
 MIDDLEWARE = [
