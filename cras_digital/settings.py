@@ -18,6 +18,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -141,3 +142,52 @@ SIMPLE_JWT = {
 CORS_ALLOWED_ALL_ORIGINS = True
 
 AUTH_USER_MODEL = 'users.User'
+
+JAZZMIN_SETTINGS = {
+    "site_title": "CRAS Digital Admin",
+    "site_header": "CRAS Digital",
+    "site_brand": "CRAS Digital",
+    "welcome_sign": "Bem-vindo ao painel do CRAS Digital",
+    "copyright": "CRAS Digital",
+    "search_model": ["users.User"],
+
+    "topmenu_links": [
+        {"name": "Início", "url": "admin:index", "permissions": ["auth.view_user"]},
+        {"model": "users.user"},
+    ],
+
+    "user_avatar": None,
+
+    "show_sidebar": True,
+    "navigation_expanded": True,
+    "hide_apps": [],
+    "hide_models": [],
+    "order_with_respect_to": ["users", "authentication"],
+
+    "icons": {
+        "auth": "fas fa-users-cog",
+        "users.User": "fas fa-user",
+        "authentication": "fas fa-key",
+    },
+
+    "default_icon_parents": "fas fa-chevron-circle-right",
+    "default_icon_children": "fas fa-circle",
+
+    "related_modal_active": False,
+}
+
+JAZZMIN_UI_TWEAKS = {
+    "theme": "cosmo",  # Exemplo: 'flatly', 'darkly', 'cosmo', 'litera' etc.
+    "navbar": "navbar-dark bg-primary",
+    "accent": "accent-primary",
+    "body": "bg-light",
+    "brand": "bg-primary",
+    "sidebar": "sidebar-dark-primary",
+    "button_classes": {
+        "primary": "btn-primary",
+        "success": "btn-success",
+        "warning": "btn-warning",
+        "danger": "btn-danger",
+        "info": "btn-info",
+    },
+}
