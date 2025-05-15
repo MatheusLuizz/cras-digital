@@ -1,4 +1,4 @@
-from rest_framework.permissions import BasePermission, SAFE_METHODS
+from rest_framework.permissions import BasePermission
 
 
 class IsOwnerOrProfessional(BasePermission):
@@ -9,6 +9,5 @@ class IsOwnerOrProfessional(BasePermission):
 
     def has_object_permission(self, request, view, obj):
         return (
-            obj.user == request.user or
-            (hasattr(request.user, 'role') and request.user.role == 'professional')
+            obj.user == request.user or (hasattr(request.user, 'role') and request.user.role == 'professional')
         )

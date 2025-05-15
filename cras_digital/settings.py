@@ -31,7 +31,8 @@ INSTALLED_APPS = [
 
     'apps.users',
     'apps.authentication',
-    'apps.appointments'
+    'apps.appointments',
+    'apps.services'
 ]
 
 MIDDLEWARE = [
