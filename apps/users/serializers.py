@@ -16,6 +16,6 @@ class UserSerializer(serializers.ModelSerializer):
             email=validated_data['email'],
             password=validated_data['password'],
             cpf=validated_data.get('cpf'),
-            documento=validated_data.get('document')
+            document=validated_data.get('document')
         )
         return user
