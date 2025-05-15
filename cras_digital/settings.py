@@ -29,10 +29,10 @@ INSTALLED_APPS = [
     'corsheaders',
 
     'apps.users',
-    #'apps.chat',
-    #'apps.cras',
-    #'apps.services',
-    #'apps.process',
+    # 'apps.chat',
+    # 'apps.cras',
+    # 'apps.services',
+    # 'apps.process',
 ]
 
 MIDDLEWARE = [
