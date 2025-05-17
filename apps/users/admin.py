@@ -23,7 +23,6 @@ class UserAdmin(DjangoUserAdmin):
     model = User
     list_display = ['username', 'email', 'cpf', 'is_staff']
 
-    # Sobrescreve fieldsets sem 'usable_password'
     fieldsets = (
         (None, {'fields': ('username', 'password')}),
         ('Personal info', {'fields': ('first_name', 'last_name', 'email', 'cpf', 'document')}),
