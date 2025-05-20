@@ -1,5 +1,6 @@
 from pathlib import Path
 import os
+import sys
 import environ
 from datetime import timedelta
 
@@ -77,7 +78,7 @@ DATABASES = {
         'NAME': env('POSTGRES_DB'),
         'USER': env('POSTGRES_USER'),
         'PASSWORD': env('POSTGRES_PASSWORD'),
-        'HOST': env('POSTGRES_HOST'),
+        'HOST': 'localhost' if 'test' in sys.argv else os.getenv('POSTGRES_HOST'),
         'PORT': env('POSTGRES_PORT'),
     }
 }
