@@ -6,6 +6,7 @@ from .serializers import SupportTicketSerializer, SupportMessageSerializer
 
 
 class SupportTicketViewSet(viewsets.ModelViewSet):
+    queryset = SupportTicket.objects.all()
     serializer_class = SupportTicketSerializer
     permission_classes = [permissions.IsAuthenticated]
 
@@ -26,6 +27,7 @@ class SupportTicketViewSet(viewsets.ModelViewSet):
 
 
 class SupportMessageViewSet(viewsets.ModelViewSet):
+    queryset = SupportMessage.objects.all()
     serializer_class = SupportMessageSerializer
     permission_classes = [permissions.IsAuthenticated]
 

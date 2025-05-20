@@ -6,6 +6,7 @@ class SupportMessageSerializer(serializers.ModelSerializer):
     class Meta:
         model = SupportMessage
         fields = '__all__'
+        read_only_fields = ['sender']
 
 
 class SupportTicketSerializer(serializers.ModelSerializer):
@@ -14,3 +15,4 @@ class SupportTicketSerializer(serializers.ModelSerializer):
     class Meta:
         model = SupportTicket
         fields = '__all__'
+        read_only_fields = ['user']
