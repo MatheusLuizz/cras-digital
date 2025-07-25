@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
 
     'rest_framework',
+    'drf_yasg',
     'corsheaders',
 
     'apps.users',
@@ -39,6 +40,7 @@ INSTALLED_APPS = [
     'apps.appointments',
     'apps.services',
     'apps.support',
+    'apps.cras_locations',
 ]
 
 MIDDLEWARE = [
