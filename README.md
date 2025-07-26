@@ -13,6 +13,20 @@ CRAS Digital aims to modernize and digitize the social assistance service manage
 - **Support System**: Provide assistance and support features for users
 - **Authentication**: Secure user authentication and authorization system
 
+## Swagger
+
+### Root user to access admin panel
+   ```bash
+   username: rootroot
+   password: rootroot
+   ```
+
+
+### Access project swagger at:
+   ```bash
+   https://cras-digital.fly.dev/api/v1/swagger/
+   ```
+
 ## Features
 
 - **RESTful API**: Complete API for frontend integration
